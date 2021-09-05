@@ -1,0 +1,188 @@
+html {
+    font-size: 10px;
+    width: 60%;
+    margin: 0 auto;
+    /* setting the base font to 10px so that "em", "rem" and "vw" can be used accordingly.*/
+  }
+  
+  body {
+    font-family: 'Raleway','Century Gothic','Tahoma','Helvetica Neue','Helvetica', 'Arial';
+    color: #232323;
+  }
+  
+  @font-face {
+    font-family: Desdemona;
+    src: url('https://www.dropbox.com/s/42vrtru8pon97j1/desdemon.ttf?raw=1')format('truetype');
+  }
+  
+  @font-face {
+    font-family: Raleway;
+    src: url('https://www.dropbox.com/s/a5v7ml6a6yke9iy/Raleway-VariableFont_wght.ttf?raw=1')format('truetype');
+  }
+  
+  @font-face {
+    font-family: Permanent Marker;
+    src: url('/Permanent_Marker/PermanentMarker-Regular.ttf') format('truetype');
+  }
+  
+  h1 {
+    font-family: 'Desdemona','Permanent Marker','Helvetica','Times New Roman';
+    font-size: 6vw;
+    letter-spacing: max(1vw);
+    font-weight: bold;
+    color: #800000;
+    margin: 1;
+    text-align: center;
+    text-align-last: center;   
+  }
+  
+  h3 {
+    font-size: 2rem;
+    font-family: 'Raleway', 'Century Gothic', 'Helvetica';
+  }
+  
+  #body {
+    background: url(https://www.dropbox.com/s/ivcxzenl8x5xcfi/kentaroart1.jpg?raw=1) /*https://twitter.com/GoodWillsmith/status/1395228526194872320/photo/1 */
+  }
+  
+  #main {
+    margin: 30px 8px;
+    padding: 25px;
+    border-radius: 50px;
+    background: #EDEDED;
+    /* The idea of this background over the manga panels is to make the website feel like the reader is swiping or scrolling through a comic strip on their device (this is how I read manga/comics online - scrolling throguh one page */
+  }
+  
+  @media (max-width: 460px) {
+    #main {
+      margin: 0;
+    }
+  }
+  
+  #image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  #img-caption {
+    text-align: center;
+    text-align-last: justify;
+  }
+  
+  .img-captiontwo {
+    text-align: center;
+  }
+  
+  #img-div {
+    padding: 2px;
+    margin: 1;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+  }
+  #captioning {
+    font-size: 2vw;
+    font-family: 'Raleway','Century Gothic', 'Helvetica','Times New Roman';
+    color:#808080;
+    text-align: center;
+    text-align-last: justify;
+  }
+  
+  #Section-one {
+    text-align: center;
+    font-size: 2.5vw;
+  }
+  #section-two {
+    text-align: center;
+    font-size: 2.5vw;
+    
+  }
+  #section-three {
+    text-align: center;
+    font-size: 2.5vw;
+  }
+  
+  #tribute-info {
+    font-size: 1.5rem;
+    text-indent: 50px;
+  }
+  #early-life {
+    font-size: 1.5rem;
+    text-indent: 50px;
+  }
+  #KentaroMiddleLife {
+    font-size: 1.5rem;
+  }
+
+  .indent-fix {
+    text-indent: 50px;
+  }
+
+  
+  #image2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+    padding: 2px;
+  }
+  
+  #image3 {
+    text-align: center;
+  }
+  
+  .list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  .symbol{
+    background: url('https://www.dropbox.com/s/rr2caz1ezv45o85/Berserk_Symbol_of_Sacrifice.png?raw=1') no-repeat left top;
+    
+  }
+   /*ul {
+  list-style-image: url('https://www.dropbox.com/s/rr2caz1ezv45o85/Berserk_Symbol_of_Sacrifice.png?raw=1');
+   } */
+   li {
+      margin: 0;
+      padding: 10px 0 10px 15px;
+      list-style: none;
+      background-image: url("https://www.dropbox.com/s/rr2caz1ezv45o85/Berserk_Symbol_of_Sacrifice.png?raw=1");
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 3vw;
+  }
+  
+  .mangatitle {
+    font-size: 2.5vw;
+    text-indent:1em;
+    text-align: justify;
+    color:indianred;
+  }
+  
+  .description {
+    font-size: 2vw;
+    text-indent: 50px;
+  }
+  
+  #tribute-link {
+   color: purple; 
+  }
+  
+  #tribute-link2 {
+    color: red;
+  }
+  
+  #note {
+    font-size: 1vw;
+  }
+  
+  
+  
