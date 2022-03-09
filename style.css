@@ -1,12 +1,12 @@
 html {
-    font-size: 10px;
+    font-size: 12px;
     width: 60%;
     margin: 0 auto;
     /* setting the base font to 10px so that "em", "rem" and "vw" can be used accordingly.*/
   }
   
   body {
-    font-family: 'Raleway','Century Gothic','Tahoma','Helvetica Neue','Helvetica', 'Arial';
+    font-family: 'Raleway', sans-serif !important;
     color: #232323;
   }
   
@@ -27,7 +27,7 @@ html {
   
   h1 {
     font-family: 'Desdemona','Permanent Marker','Helvetica','Times New Roman';
-    font-size: 6vw;
+    font-size: 6vw !important;
     letter-spacing: max(1vw);
     font-weight: bold;
     color: #800000;
@@ -37,12 +37,15 @@ html {
   }
   
   h3 {
-    font-size: 2rem;
+    font-size: 2rem !important;
     font-family: 'Raleway', 'Century Gothic', 'Helvetica';
   }
   
   #body {
-    background: url(https://www.dropbox.com/s/ivcxzenl8x5xcfi/kentaroart1.jpg?raw=1) /*https://twitter.com/GoodWillsmith/status/1395228526194872320/photo/1 */
+    background: url(https://www.dropbox.com/s/ivcxzenl8x5xcfi/kentaroart1.jpg?raw=1);
+    background-size: cover;
+    background-attachment: fixed;
+     /*https://twitter.com/GoodWillsmith/status/1395228526194872320/photo/1 */  
   }
   
   #main {
@@ -65,14 +68,15 @@ html {
     height: auto;
     margin: 0 auto;
   }
-  #img-caption {
-    text-align: center;
-    text-align-last: justify;
+
+  figcaption {
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: left;
+    color: #333333;
+    text-align-last: center;
   }
   
-  .img-captiontwo {
-    text-align: center;
-  }
   
   #img-div {
     padding: 2px;
@@ -86,58 +90,43 @@ html {
     width: 60%;
     height: auto;
   }
+
+  img {
+    border-radius: 1rem;
+    box-shadow: 10px 5px 5px #808080;
+  }
+
   #captioning {
-    font-size: 2vw;
+    font-size: 2vw !important;
     font-family: 'Raleway','Century Gothic', 'Helvetica','Times New Roman';
-    color:#808080;
+    color: #333333;
     text-align: center;
-    text-align-last: justify;
-  }
+    text-align-last: center; 
+   }
   
-  #Section-one {
-    text-align: center;
-    font-size: 2.5vw;
-  }
-  #section-two {
-    text-align: center;
-    font-size: 2.5vw;
-    
-  }
-  #section-three {
+  .section-style {
     text-align: center;
     font-size: 2.5vw;
   }
   
-  #tribute-info {
+  .tribute-info {
     font-size: 1.5rem;
-    text-indent: 50px;
-  }
-  #early-life {
-    font-size: 1.5rem;
-    text-indent: 50px;
-  }
-  #KentaroMiddleLife {
-    font-size: 1.5rem;
+    text-indent: 25px;
   }
 
-  .indent-fix {
-    text-indent: 50px;
-  }
-
-  
   #image2 {
     display: flex;
     flex-wrap: wrap;
     height: auto;
     margin: auto;
     max-width: 100%;
-    padding: 2px;
+    border-radius: 1rem;
+    box-shadow: 10px 5px 5px #808080;
   }
-  
-  #image3 {
-    text-align: center;
-  }
-  
+   #image3 {
+     border-radius: 1rem;
+     box-shadow: 10px 5px 5px #808080;
+   }
   .list{
     padding: 0;
     margin: 0;
@@ -168,8 +157,9 @@ html {
   }
   
   .description {
-    font-size: 2vw;
-    text-indent: 50px;
+    font-size: 2vw !important;
+    padding-left: 10%;
+    text-indent: 5%;
   }
   
   #tribute-link {
@@ -180,8 +170,10 @@ html {
     color: red;
   }
   
-  #note {
+  .note {
     font-size: 1vw;
+    text-align: center;
+    text-align-last: center;
   }
   
   
