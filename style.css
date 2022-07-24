@@ -1,180 +1,364 @@
 html {
-    font-size: 12px;
-    width: 60%;
-    margin: 0 auto;
-    /* setting the base font to 10px so that "em", "rem" and "vw" can be used accordingly.*/
-  }
-  
-  body {
-    font-family: 'Raleway', sans-serif !important;
-    color: #232323;
-  }
-  
-  @font-face {
-    font-family: Desdemona;
-    src: url('https://www.dropbox.com/s/42vrtru8pon97j1/desdemon.ttf?raw=1')format('truetype');
-  }
-  
-  @font-face {
-    font-family: Raleway;
-    src: url('https://www.dropbox.com/s/a5v7ml6a6yke9iy/Raleway-VariableFont_wght.ttf?raw=1')format('truetype');
-  }
-  
-  @font-face {
-    font-family: Permanent Marker;
-    src: url('/Permanent_Marker/PermanentMarker-Regular.ttf') format('truetype');
-  }
-  
-  h1 {
-    font-family: 'Desdemona','Permanent Marker','Helvetica','Times New Roman';
-    font-size: 6vw !important;
-    letter-spacing: max(1vw);
-    font-weight: bold;
-    color: #800000;
-    margin: 1;
-    text-align: center;
-    text-align-last: center;   
-  }
-  
-  h3 {
-    font-size: 2rem !important;
-    font-family: 'Raleway', 'Century Gothic', 'Helvetica';
-  }
-  
-  #body {
-    background: url(https://www.dropbox.com/s/ivcxzenl8x5xcfi/kentaroart1.jpg?raw=1);
-    background-size: cover;
-    background-attachment: fixed;
-     /*https://twitter.com/GoodWillsmith/status/1395228526194872320/photo/1 */  
-  }
-  
-  #main {
-    margin: 30px 8px;
-    padding: 25px;
-    border-radius: 50px;
-    background: #EDEDED;
-    /* The idea of this background over the manga panels is to make the website feel like the reader is swiping or scrolling through a comic strip on their device (this is how I read manga/comics online - scrolling throguh one page */
-  }
-  
-  @media (max-width: 460px) {
-    #main {
-      margin: 0;
-    }
-  }
-  
-  #image {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-  }
+  font-size: 16px;
+  width: 600px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  /* setting the base font to 16px so that "em", "rem" and "vw" can be used accordingly.*/
+}
 
+/* Legend */
+:root {
+  --primary-color: #d7d7db;
+  --secondary-color: #ededf0;
+  --background-one: #232326;
+  --background-two: #2a2a2e;
+  --border: #38383d;
+  --link-glow: #ff4545;
+
+}
+
+/* Legend End */
+
+
+/* Fonts */
+@font-face {
+  font-family: 'desdemonaregular';
+  src: url('Fonts/desdemon_1-webfont.woff2') format('woff2'),
+    url('Fonts/desdemon_1-webfont.woff') format('woff'), url('Fonts/desdemon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+ */
+
+/* Fonts End */
+
+/*  Navigation Menu */
+
+.navbar-custom {
+  background-color: var(--background-two);
+}
+
+/* brand & text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: var(--secondary-color);
+}
+
+/* link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: var(--primary-color);
+}
+
+/* active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: var(--link-glow);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 69, 69, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 69, 69);
+}
+
+/* -------- Navigation Menu -------- */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--secondary-color);
+}
+
+/* Titles and Subtitles */
+h1 {
+  font-family: 'desdemonaregular', 'Righteous', cursive;
+  font-size: 3rem;
+  letter-spacing: max(1vw);
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 1;
+  text-align: center;
+  text-align-last: center;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.5rem !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Titles & Subtitles End */
+
+/* Visual Foundation */
+#body {
+  background: url(https://www.dropbox.com/s/ivcxzenl8x5xcfi/kentaroart1.jpg?raw=1);
+  background-size: cover;
+  background-attachment: fixed;
+  /*https://twitter.com/GoodWillsmith/status/1395228526194872320/photo/1 */
+}
+
+#main {
+  margin: 30px 8px;
+  margin-top: 80px;
+  padding: 25px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--border);
+  background: var(--background-one);
+  color: var(--secondary-color);
+  /*box-shadow: inset 0px 0px 50px 3px #3E3E44;
+  /* The idea of this background over the manga panels is to make the website feel like the reader is swiping or scrolling through a comic strip on their device (this is how I read manga/comics online - scrolling throguh one page */
+}
+
+hr {
+  background-color: var(--border);
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
   figcaption {
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: left;
-    color: #333333;
-    text-align-last: center;
+    justify-content: center;
   }
-  
-  
-  #img-div {
-    padding: 2px;
-    margin: 1;
-  }
-  
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    height: auto;
-  }
+}
 
-  img {
-    border-radius: 1rem;
-    box-shadow: 10px 5px 5px #808080;
+@media (max-width: 768px) {
+  html {
+    width: 600px;
   }
+}
 
-  #captioning {
-    font-size: 2vw !important;
-    font-family: 'Raleway','Century Gothic', 'Helvetica','Times New Roman';
-    color: #333333;
-    text-align: center;
-    text-align-last: center; 
-   }
-  
-  .section-style {
-    text-align: center;
-    font-size: 2.5vw;
-  }
-  
-  .tribute-info {
-    font-size: 1.5rem;
-    text-indent: 25px;
-  }
+/* Responsiveness end */
 
-  #image2 {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    margin: auto;
-    max-width: 100%;
-    border-radius: 1rem;
-    box-shadow: 10px 5px 5px #808080;
-  }
-   #image3 {
-     border-radius: 1rem;
-     box-shadow: 10px 5px 5px #808080;
-   }
-  .list{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
-  .symbol{
-    background: url('https://www.dropbox.com/s/rr2caz1ezv45o85/Berserk_Symbol_of_Sacrifice.png?raw=1') no-repeat left top;
-    
-  }
-   /*ul {
+/* Images */
+#all-img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--border);
+  justify-content: center;
+  cursor: zoom-in;
+  transition: 0.3s;
+}
+
+#all-img:hover {
+  opacity: 0.7;
+}
+
+#image2 {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+  border-radius: 5px;
+  cursor: zoom-in;
+  transition: 0.3s;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--border);
+}
+
+.hover {
+  cursor: zoom-in;
+  transition: 0.3s;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--border);
+}
+
+.hover:hover {
+  opacity: 0.7;
+}
+
+#image2:hover {
+  opacity: 0.7;
+}
+
+#image3 {
+  border-radius: 5px;
+  cursor: zoom-in;
+  transition: 0.3s;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--border)
+}
+
+#image3:hover {
+  opacity: 0.7;
+}
+
+.modal-image {
+  width: 400px;
+  height: auto;
+}
+
+
+.modal-image2 {
+  width: 600px;
+  height: auto;
+  overflow: hidden;
+}
+
+.modal-content {
+  background: var(--background-two);
+}
+
+.modal-header {
+  border-style: hidden;
+}
+
+
+
+/* Captioning */
+
+figure {
+  display: block;
+  text-align: center;
+}
+
+#captioning {
+  font-size: 1.6rem;
+  text-align: center;
+  text-align-last: center;
+}
+
+.img-caption {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  width: fit-content;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: var(--border);
+  background-color: var(--background-two);
+  text-align: center;
+}
+
+figure figcaption {
+  text-align: left;
+  display: inline-block;
+  width: 250px;
+  justify-content: center;
+}
+
+/* captioning end */
+
+/* Mangas Section*/
+.note-caption {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  width: fit-content;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: var(--border);
+  background-color: var(--background-two);
+  text-align: center;
+}
+
+.note {
+  font-size: 1rem;
+  text-align: left;
+  text-align-last: center;
+}
+
+/* Mangas Section end */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: auto;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.section-style {
+  text-align: center;
+}
+
+p {
+  font-size: 1em !important;
+}
+
+.tribute-info {
+  font-size: 16px;
+  text-indent: 25px;
+}
+
+
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.symbol {
+  background: url('https://www.dropbox.com/s/rr2caz1ezv45o85/Berserk_Symbol_of_Sacrifice.png?raw=1') no-repeat left top;
+
+}
+
+/*ul {
   list-style-image: url('https://www.dropbox.com/s/rr2caz1ezv45o85/Berserk_Symbol_of_Sacrifice.png?raw=1');
    } */
-   li {
-      margin: 0;
-      padding: 10px 0 10px 15px;
-      list-style: none;
-      background-image: url("https://www.dropbox.com/s/rr2caz1ezv45o85/Berserk_Symbol_of_Sacrifice.png?raw=1");
-      background-repeat: no-repeat;
-      background-position: left center;
-      background-size: 3vw;
-  }
-  
-  .mangatitle {
-    font-size: 2.5vw;
-    text-indent:1em;
-    text-align: justify;
-    color:indianred;
-  }
-  
-  .description {
-    font-size: 2vw !important;
-    padding-left: 10%;
-    text-indent: 5%;
-  }
-  
-  #tribute-link {
-   color: purple; 
-  }
-  
-  #tribute-link2 {
-    color: red;
-  }
-  
-  .note {
-    font-size: 1vw;
-    text-align: center;
-    text-align-last: center;
-  }
-  
-  
-  
+#manga-list li {
+  margin: 0;
+  padding-right: 40px;
+  padding-left: 40px;
+  list-style: none;
+  background-image: url("https://www.dropbox.com/s/rr2caz1ezv45o85/Berserk_Symbol_of_Sacrifice.png?raw=1");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 25px;
+}
+
+
+.mangatitle {
+  font-size: 1.2rem;
+  text-indent: 1em;
+  color: indianred;
+}
+
+.description {
+  font-size: 1rem;
+  padding-left: 10%;
+  text-indent: 5%;
+}
+
+.tribute-link {
+  color: var(--link-glow);
+}
+
+#tribute-link {
+  color: purple;
+}
+
+#tribute-link2 {
+  color: red;
+}
