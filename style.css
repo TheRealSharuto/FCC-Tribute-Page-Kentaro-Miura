@@ -45,6 +45,7 @@ font-family: 'Montserrat', sans-serif;
 .navbar-custom {
   background-color: rgb(35, 35, 38, .95);
   backdrop-filter: blur(5px);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-brand {
